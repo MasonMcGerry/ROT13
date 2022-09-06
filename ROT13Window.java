@@ -19,7 +19,7 @@ public class ROT13Window {
     JLabel cipherLabel = new JLabel("Enter Cipher");
     JLabel decipheredLabel = new JLabel("Deciphered");
     JLabel output = new JLabel("");
-    JTextField text = new JTextField(20);
+    JTextField text = new JTextField(30);
     JButton b = new JButton("Decipher");
     String cipher = "";
     String deciphered = "";
@@ -33,7 +33,6 @@ public class ROT13Window {
             {
                 cipher = text.getText();
                 deciphered =  r.rot13Decipher(cipher).toString();
-                // System.out.println(deciphered);
                 output.setText(deciphered);
             }
         };
